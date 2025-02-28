@@ -1,0 +1,8 @@
+CREATE TABLE tarefas {
+    id AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    descricao VARCHAR(100),
+    estado enum('Pendente', 'Em andamento', 'Concluída') DEFAULT 'Pendente',
+    projeto_id INT,
+    FOREIGN KEY (projeto_id) REFERENCES projetos(id)
+}
