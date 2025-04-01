@@ -1,5 +1,5 @@
-CREATE TABLE categorias {
+CREATE TABLE categorias (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
-    descricao (VARCHAR(100)), 
-}
+    descricao VARCHAR(100)
+);
